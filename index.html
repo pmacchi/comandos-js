@@ -4,15 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mi website</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border-left: 3px solid #333;
+            padding: 10px;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
+    <h1>Cómo Subir Actualizaciones a GitHub</h1>
+    <p>Sigue estos pasos para subir tus actualizaciones desde un repositorio local a GitHub usando la consola de Git:</p>
+    
+    <ol>
+        <li>
+            <strong>Abre la consola o terminal</strong> en tu sistema.
+        </li>
+        <li>
+            <strong>Navega al directorio de tu repositorio local</strong> usando el comando <code>cd</code>:
+            <pre>cd ruta/al/repositorio</pre>
+        </li>
+        <li>
+            <strong>Verifica el estado de tu repositorio</strong> para ver los cambios realizados:
+            <pre>git status</pre>
+        </li>
+        <li>
+            <strong>Añade los cambios al área de preparación</strong> (staging area):
+            <pre>git add .</pre>
+            Para archivos específicos, usa:
+            <pre>git add archivo1 archivo2</pre>
+        </li>
+        <li>
+            <strong>Confirma los cambios</strong> con un mensaje descriptivo:
+            <pre>git commit -m "Tu mensaje descriptivo sobre los cambios"</pre>
+        </li>
+        <li>
+            <strong>Asegúrate de estar en la rama correcta</strong>. Para ver la rama actual:
+            <pre>git branch</pre>
+            Para cambiar de rama, usa:
+            <pre>git checkout nombre-de-la-rama</pre>
+        </li>
+        <li>
+            <strong>Actualiza tu repositorio remoto en GitHub</strong>:
+            <pre>git push origin nombre-de-la-rama</pre>
+            Reemplaza <code>nombre-de-la-rama</code> con el nombre de tu rama, por ejemplo, <code>main</code> o <code>master</code>.
+        </li>
+        <li>
+            <strong>Verifica el resultado</strong>. Revisa tu repositorio en GitHub para asegurarte de que los cambios se hayan reflejado correctamente.
+        </li>
+    </ol>
+    
+    <p>¡Eso es todo! Siguiendo estos pasos deberías poder subir tus actualizaciones a GitHub sin problemas.</p>
 
- 
- <script src="/scripts.js"></script>
-  <script src="/juegoNumero.js"></script>
-
-
+  <script src="/scripts.js"></script> 
+ <!---- <script src="/juegoNumero.js"></script> -->
 </body>
 </html>
 
