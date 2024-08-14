@@ -1,13 +1,32 @@
-// Operador AND y OR
 
-//Operador AND &&
+function ingresoNumero ( izquierda, derecha ) {
+	var numeroSerie = ( izquierda + derecha);
+		return numeroSerie;
+	}
 
-var acuerdo = prompt('¿Acepta el acuerdo? Si o No');
+console.log(ingresoNumero( 200, 300));
+document.write(ingresoNumero(200, 400));
 
+// bucle while
 
-if (acuerdo === 'Si' && acuerdo === 'Si') {
-document.write('Aceptó los terminos y condiciones');
-} 
-else {
-document.write('No aceptó los terminos :( ');
+var max = 10000;
+var numAleatorio = getRamdonNumber(max);
+var numPropuesto;
+var intentos = 0;
+
+//función que devuelve numeros aleatorios
+
+function getRamdonNumber(num) {
+	return Math.floor(Math.random() * num) + 1;
 }
+
+while(numPropuesto !== numAleatorio) {
+	numPropuesto = getRamdonNumber(max);
+	intentos += 1;
+}
+
+//document.getElementById('numero').innerHTML = "El numero aleatorio es: " + numAleatorio;
+// document.getElementById('intentos').innerHTML = "El numero  de intentos fue de: " + intentos;
+
+document.write("El numero secreto fue " + numAleatorio);
+document.write("El numero de intentos fue " + intentos);
