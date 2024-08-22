@@ -30,3 +30,26 @@ while(numPropuesto !== numAleatorio) {
 
 document.write("El numero secreto fue " + numAleatorio);
 document.write("El numero de intentos fue " + intentos);
+
+var comienzoDeSemana;
+
+function mapDays() {
+    const days = {
+        lunes: "Lunes",
+        martes: "Martes",
+        miercoles: "Miércoles",
+        jueves: "Jueves",
+        viernes: "Viernes"
+    };
+
+    return days;
+}
+
+const diasDeLaSemana = mapDays();
+console.log(diasDeLaSemana);
+
+while( lunes !== mapDays ) {
+  days = mapDays;
+  intentos +=1;
+}
+
